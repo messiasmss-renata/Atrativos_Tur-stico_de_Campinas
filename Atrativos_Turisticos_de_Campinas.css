@@ -1,0 +1,67 @@
+body{
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b4cdf3;
+}
+
+/* Estilos para o título e descrição */
+/* Solicitei ajuda a IA e ela me apresentou o site fonts.google.com, eu escolhi esse código, não entendi muito bem, mas achei interessante e decidi usar. */
+
+/* CONTAINER FLEX */
+/* O container-flex é uma classe que define um contêiner flexível para organizar os cartões de atrativos turísticos. Ele utiliza as propriedades do Flexbox para criar um layout responsivo e alinhado. */
+
+.container-flex{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    padding: 20px;
+}
+/*Aqui eu queria muito dividir a coluna em 3, então a IA me ensinou á usar esse código grid template-columns, pois ele divide a coluna em 3 partes iguais, e o gap é o espaço entre os cartões. */   
+
+/* CARDS */
+
+.card{
+    width: 300px;
+
+    background-color: rgb(252, 252, 252);
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+
+    transition: 0.3s;
+}
+
+/* EFEITO */
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+/* IMAGENS */
+
+.card img{
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+/* TITULOS */
+
+h1{
+    text-align: center;
+}
+
+h2{
+    color: #1f078a;
+}
